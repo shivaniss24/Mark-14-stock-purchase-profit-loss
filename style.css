@@ -1,9 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
+
+:root{
+    --font-one:'Rampart One', cursive;
+    --font-two:'Source Serif Pro', serif;
+}
 body
 {
     text-align: center;
+    font-family: var(--font-one);
 }
 label
 {
  display: block;
  padding-bottom: 1rem;
+ color: brown;
+}
+h1 
+{
+    margin:auto;
+    margin-top: 3rem;
+    text-align: center;
+}
+#main 
+{ 
+    margin: auto;
+    margin-top: 1rem;
+    width: 50%;
+    padding: 4rem;
+    font-family: var(--font-two);
+    background-color: blanchedalmond;
+}
+input
+{
+    display: flex;
+    margin: auto;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+}
+
+#submit-btn
+{
+    margin: auto;
+    padding:0.5rem;
+    border: 1px solid black;
+    border-radius: 1.1rem; 
+    background-color: white;
+    color: black;
+}
+#submit-btn:hover
+{
+    background-color: black;
+    color: white;
 }

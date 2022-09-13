@@ -19,7 +19,7 @@ function calculateProfitAndLoss(initial,quantity,current)
         outputBox.innerText="Your loss is "+ loss + " and loss percentage is "+lossPercentage.toFixed(2)+ " % 👎 ";
         outputBox.style.color='green';
     }
-    if(current>initial)
+   else if(current>initial)
     {
         //profit logic here
         var profit=(current-initial)*quantity;
@@ -51,11 +51,5 @@ function submitHandler()
     var curr=Number(currentPrice.value);
 
     calculateProfitAndLoss(ip,qty,curr);
-
-
 }
-
-
-
-
 submitButton.addEventListener('click',submitHandler);

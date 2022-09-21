@@ -17,7 +17,7 @@ function calculateProfitAndLoss(initial,quantity,current)
         var lossPercentage=(loss/initial)*100;
 
         outputBox.innerText="Your loss is "+ loss + " and loss percentage is "+lossPercentage.toFixed(2)+ " % 👎 ";
-        outputBox.style.color='green';
+        // outputBox.style.color='green';
     }
    else if(current>initial)
     {
@@ -33,15 +33,15 @@ function calculateProfitAndLoss(initial,quantity,current)
     {
         //rest of logic
         outputBox.innerText="oh oh! please enter valid values 🖊️ ";
-        outputBox.style.color='green';
-        outputBox.style.padding='2rem';
+        // outputBox.style.color='green';
+        // outputBox.style.padding='2rem';
 
 }
 else{
     outputBox.innerText="No pain no gain and no gain no pain. 🙌  ";
-    outputBox.style.color='green';
-    outputBox.style.padding='2rem';
-}
+    // outputBox.style.color='green';
+//     outputBox.style.padding='2rem';
+ }
 }
 
 function submitHandler()
